@@ -296,6 +296,8 @@ section .main .button:hover i {
 
 /*About*/
 
+
+
 .about{
     width: 100%;
     height: 100vh;
@@ -341,11 +343,11 @@ section .main .button:hover i {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 35px;
+    bottom: 30px;
 }
 
 .about .about_main .about_image .about_small_image img{
-    height: 92px;
+    height: 120px;
     margin: 5px 0;
     cursor: pointer;
     background: white;
@@ -353,8 +355,72 @@ section .main .button:hover i {
     border-radius: 6px;
     padding: 5px 5px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 6);
-    opacity: 0.8;
+    opacity: 0.5;
+    transition: 0.3s;
 }
+
+.about .about_main .about_image .about_small_image img:hover{
+    opacity: 1;
+}
+
+
+.about .about_main .image_container{
+    padding: 10px;
+    display: flex;
+
+}
+
+.about .about_main .image_container img{
+    border: 3px solid #130404;
+    border-radius: 20px;
+    width: 400px;
+    height: 430px;
+    padding: 30px;
+    box-shadow: 0 0 8px #130404;
+}
+
+.about .about_main .about_text{
+    margin-top: 45px;
+    padding-bottom: 55px;
+}
+
+.about .about_main .about_text p{
+    background: linear-gradient(to right, #333333,#333333);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 22px;
+    width: 600px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 2px solid #130404;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #130404;
+}
+
+.about .about_btn{
+    color: black;
+    background: linear-gradient(to right, #ccffff,#ffcc99);
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50, -50);
+    padding: 10px 25px;
+    border: 2px solid #130404;
+    text-decoration: none;
+    box-shadow: 0 0 8px #130404;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.about .about_btn:hover{
+    border: 1px solid transparent;
+    background: #ccffff;
+    color: black;
+}
+
+
+
+
 
 
 
@@ -398,6 +464,10 @@ section .main .button:hover i {
     height: 719px;
     object-fit: cover;
 
+
+    background-image: url(/image/green_bag1.png);
+    opacity: 0.2;
+    background-size: cover;
 
 
     -webkit-background-clip
