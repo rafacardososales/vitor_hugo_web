@@ -726,7 +726,7 @@ section .main .button:hover i {
     height: 30px;
     margin: 0 2px;
     border-radius: 50%;
-    background: f3f3f3;
+    background: #f3f3f3;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -735,6 +735,88 @@ section .main .button:hover i {
     width: 20px;
     margin: 5px 5px;
 }
+
+
+
+
+
+
+
+
+/*Rodapé*/
+
+footer{
+    width: 100%;
+
+}
+
+
+footer .footer_main{
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+
+footer .footer_main .tag .center{
+    text-align: center;
+}
+
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: black;
+}
+
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+
+footer .footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3;
+}
+
+
+footer .footer_main .tag a i:hover{
+    color: #ffcc99;
+}
+
+
+footer .footer_main .tag .social_link{
+    display: flex;
+}
+
+
+footer .footer_main .tag .social_link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+
+
+
 
 
 
