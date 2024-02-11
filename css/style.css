@@ -9,6 +9,19 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to right, #ccffff, #ffcc99);
+}
+
+
 section {
     width: 100%;
     height: 100vh;
@@ -307,7 +320,7 @@ section .main .button:hover i {
 
 .about h1 {
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,8 +339,6 @@ section .main .button:hover i {
 
 .about .about_main {
     position: relative;
-    top: 40px;
-    left: 50px;
     transform: translate(-50, -50);
     display: flex;
     justify-content: space-around;
@@ -373,15 +384,14 @@ section .main .button:hover i {
 .about .about_main .image_container img {
     border: 3px solid #130404;
     border-radius: 20px;
-    width: 400px;
+    width: 500px;
     height: 430px;
     padding: 30px;
     box-shadow: 0 0 8px #130404;
 }
 
 .about .about_main .about_text {
-    margin-top: 45px;
-    padding-bottom: 55px;
+  
 }
 
 .about .about_main .about_text p {
@@ -389,9 +399,11 @@ section .main .button:hover i {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 22px;
-    width: 600px;
+    width: 500px;
+    height: 430px;
     text-align: justify;
     padding: 25px 30px;
+    margin-right: 60px;
     border: 2px solid #130404;
     border-radius: 20px;
     box-shadow: 0 0 8px #130404;
@@ -597,7 +609,7 @@ section .main .button:hover i {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background: linear-gradient(to top right, #ffffff 32%, #ffcc99 95%);
     background-size: cover;
@@ -613,8 +625,8 @@ section .main .button:hover i {
     position: relative;
     top: -50px;
     left: -60px;
+    text-align: start;
     padding-top: 100px;
-    padding-right: 80px;
 }
 
 .login_form .right h1{
@@ -786,7 +798,7 @@ footer .footer_main .tag a{
 
 footer .footer_main .tag a i{
     padding: 0 10px;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 
@@ -797,6 +809,7 @@ footer .footer_main .tag a i:hover{
 
 footer .footer_main .tag .social_link{
     display: flex;
+    
 }
 
 
@@ -812,14 +825,73 @@ footer .footer_main .tag .social_link a{
     margin: 0 5px;
     z-index: 10;
     overflow: hidden;
+    
+}
+
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 15px;
+    line-height: 25px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+    
+}
+
+
+footer .footer_main .tag .social_link a:hover i{
+    color: white;
+}
+
+
+footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #130404 32%, #ffcc99 95%);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+    
+}
+
+
+footer .footer_main .tag .social_link a:hover:after{
+    left: 0;
+}
+
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202, 202, 202);
+    border-radius: 25px;
 }
 
 
 
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+}
 
 
-
-
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: linear-gradient(to right, #ccffff, #ffcc99);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: black;
+}
 
 
 
