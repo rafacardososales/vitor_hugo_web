@@ -10,7 +10,6 @@
 <p>CSS</p>
 <p>JavaScript</p>
 <br>
-<p>Sinta-se à vontade para personalizar essa apresentação conforme necessário e adicionar mais detalhes específicos sobre seu projeto!</p>
 
 
 
