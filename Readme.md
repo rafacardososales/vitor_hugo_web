@@ -8,7 +8,7 @@
 <h1>Tecnologias Utilizadas</h1>
 <p>HTML</p>
 <p>CSS</p>
-<p>JavaScript</p>
+<p>JavaScript(pouca coisa)</p>
 <br>
 
 
